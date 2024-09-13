@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Payment Form</title>
+        <link rel="stylesheet" href="../tourism/u_payment.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+ 
+    </head>
+    <body>
+        <div class="wrapper">
+            <h2>Payment Form</h2>
+         <form action="process_form.php" id="paymentForm" method="POST">
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="text" name="full_name" placeholder="Full Name" required class="name">
+                    </div>
+                    <div class="input_box">
+                        <input type="text" name="name_on_card" placeholder="Name on card" required class="name">
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="tel" name="card_number" class="name" placeholder="Card Number" required>
+                    </div>
+                    <div class="input_box">
+                        <input type="tel" name="card_cvv" class="name" placeholder="Card CVV" required>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="date" name="exp_month" class="name" placeholder="Exp Month" required>
+                    </div>
+                    <div class="input_box">
+                        <input type="date" name="exp_year" class="name" placeholder="Exp Year" required>
+                    </div>
+                </div>
+                <div class="input_group">
+                    <div class="input_box">
+                        <input type="tel" name="amount" class="name" value="0.00" pattern="[0-9]*" oninput="this.value = this.value.replace(/[^0-9.]/g, '');">
+                    </div>                    
+                <div class="input_box">
+                    <input type="tel" name="contactnumber"  max=10 class="name" placeholder="Enter your Contact Number" pattern="[1-9]{1}[0-9]{9}" required>
+                </div>
+                </div>
+                <br>
+                <div class="input_group">
+                    <div class="input_box">
+                        <button type="submit">Pay Now</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            
+        function clearForm() {
+            document.getElementById("paymentForm").reset();
+        }
+        </script>
+    </body>
+</html>

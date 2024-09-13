@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <!-- Add your CSS and fontawesome links here -->
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Payment Form</h2>
+        <!-- Your payment form here -->
+        <button id="view-payments-btn">View Payments</button>
+        <div id="payment-table-container"></div>
+    </div>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#view-payments-btn').click(function(){
+                $.ajax({
+                    url: "get_payment_details.php",
+                    method: "GET",
+                    dataType: "json",
+                    success: function(data) {
+                        if (data && data.length > 0) {
+                            var tableHtml = '<table border="1"><thead><tr><th>Full Name</th><th>Name on Card</th><th>Card Number</th><th>Card CVV</th><th>Exp Month</th><th>Exp Year</th><th>Amount</th></tr></thead><tbody>';
+                            $.each(data, function(index, payment) {
+                                tableHtml += '<tr>';
+                                tableHtml += '<td>' + payment.full_name + '</td>';
+                                tableHtml += '<td>' + payment.name_on_card + '</td>';
+                                tableHtml += '<td>' + payment.card_number + '</td>';
+                                tableHtml += '<td>' + payment.card_cvv + '</td>';
+                                tableHtml += '<td>' + payment.exp_month + '</td>';
+                                tableHtml += '<td>' + payment.exp_year + '</td>';
+                                tableHtml += '<td>' + payment.amount + '</td>';
+                                tableHtml += '</tr>';
+                            });
+                            tableHtml += '</tbody></table>';
+                            $('#payment-table-container').html(tableHtml);
+                        } else {
+                            $('#payment-table-container').html('<p>No payment details found.</p>');
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(xhr.responseText);
+                        $('#payment-table-container').html('<p>An error occurred while fetching payment details.</p>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

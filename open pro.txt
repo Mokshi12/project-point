@@ -1,0 +1,21 @@
+Tourism Management System in a browser.     http://localhost/tourism                  and http://localhost/tourism/admin               for the admin side.
+
+Luxury Bundles: Elevate Your Experience"
+"Bundle Bliss: Unveil Your Ultimate Collection"
+"Chic & Co: Curated Packages for Every Style"
+"Glamour Galore: Unwrap Your Dream Packages"
+"Bounty Boxes: Explore Endless Possibilities"
+"Radiant Collections: Illuminate Your World"
+"Ensemble Elegance: Crafted Just for You"
+"Treasure Trove: Unlock Exclusive Packages"
+"Allure Assortments: Your Gateway to Glamour"
+"Signature Sets: Define Your Distinct Style"
+"Whimsy & Wonder: Dive into Delightful Packages"
+"Opulent Offerings: Indulge in Luxury Packages"
+"Bundle Bonanza: Your Destination for Delight"
+"Charm Chests: Discover Your Hidden Gems"
+"Gilded Galore: Embrace the Essence of Luxury"
+
+
+
+
