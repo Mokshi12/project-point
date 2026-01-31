@@ -71,26 +71,32 @@ This project was developed as part of practical training to demonstrate full-sta
 ## ⚙️ Setup & Installation
 
 1. **Clone the repository**
+   
    bash
    git clone https://github.com/Mokshi12/project-point.git
 
 2. **Move to project folder**
+   
    cd project-point
    
 3. **Install & configure server**
+   
    Install XAMPP / WAMP / MAMP
    Start Apache and MySQL
    
 4. **Import the database**
+   
    Open phpMyAdmin
    Create a database (e.g., project_point)
    Import the SQL file (if available)
 
 5. **Update database credentials**
+    
    Open config.php (inside database/)
    Add your DB name, username and password
 
 6. **Visit in browser**
+    
    http://localhost/project-point/
 
 
