@@ -29,6 +29,7 @@ This project was developed as part of practical training to demonstrate full-sta
 ## 📁 Project Structure
 
 📦project-point
+
 ├── admin/ ← Admin dashboard files
 
 ├── assets/ ← Images, CSS, JS files
@@ -36,23 +37,36 @@ This project was developed as part of practical training to demonstrate full-sta
 ├── build/ ← Build / compiled files
 
 ├── classes/ ← PHP classes
+
 ├── database/ ← Database config & connection
+
 ├── dist/ ← Distribution assets
+
 ├── inc/ ← Includes (header, footer, functions)
+
 ├── libs/ ← Libraries
+
 ├── plugins/ ← Plugin scripts
+
 ├── uploads/ ← Uploaded images / files
+
 ├── index.php ← Landing page
+
 ├── login.php ← Login page
+
 ├── logout.php ← Logout logic
+
 ├── my_account.php ← User account management
+
 ├── packages.php ← Travel package listing
+
 ├── view_package.php ← Package details page
+
 ├── payment_details.php ← Payment processing page
+
 └── README.md
 
 
----
 
 ## ⚙️ Setup & Installation
 
