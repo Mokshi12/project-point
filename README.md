@@ -30,8 +30,11 @@ This project was developed as part of practical training to demonstrate full-sta
 
 📦project-point
 ├── admin/ ← Admin dashboard files
+
 ├── assets/ ← Images, CSS, JS files
+
 ├── build/ ← Build / compiled files
+
 ├── classes/ ← PHP classes
 ├── database/ ← Database config & connection
 ├── dist/ ← Distribution assets
